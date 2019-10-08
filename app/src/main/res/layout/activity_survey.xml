@@ -34,6 +34,7 @@
             android:layout_marginBottom="22dp"
             android:text="Question #3: Where do you picture your ideal vacation?"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -64,6 +65,41 @@
             android:id="@+id/radioGroup"
             android:layout_width="299dp"
             android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2">
+
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 1" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 3" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 4" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="299dp"
+            android:layout_height="128dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView5"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -71,29 +107,31 @@
 
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonG2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Answer 1" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/radioButton4G2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Answer 2" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButton3G2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Answer 3" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButton2G2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:text="Answer 4" />
         </RadioGroup>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
