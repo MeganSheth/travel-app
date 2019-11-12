@@ -19,10 +19,11 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="34dp"
-            android:layout_marginBottom="274dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="698dp"
             android:text="Question #1: How big is your budget for this vacation?"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #3: Where do you picture your ideal vacation?"
+            android:text="Question #4: Where do you picture your ideal vacation?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -44,8 +45,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="184dp"
-            android:text="Question #2: Do you like cold or warm weather?"
+            android:text="Question #2: What type of weather do you like?"
             app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -55,11 +57,76 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="74dp"
-            android:text="Question #1: Are you an indoor or outdoor person?"
+            android:text="Question #3: What kind of person are you when vacationing??"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="299dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2">
+
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 1" />
+
+            <RadioButton
+                android:id="@+id/radioButton1s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 2" />
+
+            <RadioButton
+                android:id="@+id/radioButton1s3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 3" />
+
+            <RadioButton
+                android:id="@+id/radioButton1s4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 4" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="289dp"
+            android:layout_height="90dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView3">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonG2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Big concern $" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG2s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not as much of a concern $$" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG2s3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not a concern $$$" />
+        </RadioGroup>
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -72,65 +139,134 @@
 
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonG3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 1" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/radioButtonG3s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 2" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButtonG3s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 3" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonG3s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 4" />
         </RadioGroup>
 
         <RadioGroup
-            android:id="@+id/radioGroup2"
+            android:id="@+id/radioGroup4"
             android:layout_width="299dp"
             android:layout_height="128dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView3">
+            app:layout_constraintTop_toTopOf="@+id/textView4">
 
 
             <RadioButton
-                android:id="@+id/radioButtonG2"
+                android:id="@+id/radioButtonG4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 1" />
 
             <RadioButton
-                android:id="@+id/radioButton4G2"
+                android:id="@+id/radioButtonG4s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 2" />
 
             <RadioButton
-                android:id="@+id/radioButton3G2"
+                android:id="@+id/radioButtonG4s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 3" />
 
             <RadioButton
-                android:id="@+id/radioButton2G2"
+                android:id="@+id/radioButtonG4s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Answer 4" />
         </RadioGroup>
 
+        <RadioGroup
+            android:id="@+id/radioGroup5"
+            android:layout_width="299dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonG5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 1" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG5s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 2" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG5s3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 3" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG5s4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 4" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroup6"
+            android:layout_width="299dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonG6s1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 1" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG6s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 2" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG6s3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 3" />
+
+            <RadioButton
+                android:id="@+id/radioButtonG6s4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Answer 4" />
+        </RadioGroup>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
