@@ -136,20 +136,19 @@
                 android:id="@+id/radioButtonG4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Looking for some adventure" />
+                android:text="Looking for an adventure" />
 
             <RadioButton
                 android:id="@+id/radioButtonG4s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Looking for some adventure" />
 
             <RadioButton
                 android:id="@+id/radioButtonG4s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
-
+                android:text="Mostly safe" />
             <RadioButton
                 android:id="@+id/radioButtonG4s4"
                 android:layout_width="match_parent"
@@ -214,25 +213,25 @@
                 android:id="@+id/radioButtonG6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Lots of people" />
 
             <RadioButton
                 android:id="@+id/radioButtonG6s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Not too crowded" />
 
             <RadioButton
                 android:id="@+id/radioButtonG6s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="Few people" />
 
             <RadioButton
                 android:id="@+id/radioButtonG6s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 4" />
+                android:text="Remote and private" />
         </RadioGroup>
 
         <TextView
@@ -258,25 +257,25 @@
                 android:id="@+id/radioButtonG7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Lots of history" />
 
             <RadioButton
                 android:id="@+id/radioButtonG7s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Moderate amount of history" />
 
             <RadioButton
                 android:id="@+id/radioButtonG7s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="Small amount of history" />
 
             <RadioButton
                 android:id="@+id/radioButtonG7s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 4" />
+                android:text="Basic and Simple" />
         </RadioGroup>
 
         <TextView
@@ -284,7 +283,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #7: Random Question?"
+            android:text="Question #7: What kind of food  do you want to eat?"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup7" />
@@ -301,25 +300,25 @@
                 android:id="@+id/radioButtonG8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Exotic delicacies" />
 
             <RadioButton
                 android:id="@+id/radioButtonG8s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Different but traces of simplistic cuisines" />
 
             <RadioButton
                 android:id="@+id/radioButtonG8s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="Basic but traces of exotic cuisine" />
 
             <RadioButton
                 android:id="@+id/radioButtonG8s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 4" />
+                android:text="Basic and simple food" />
         </RadioGroup>
 
         <TextView
@@ -327,7 +326,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #8: Random Question?"
+            android:text="Question #8: Who are you traveling with?"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup8" />
@@ -345,25 +344,25 @@
                 android:id="@+id/radioButtonG9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="With family" />
 
             <RadioButton
                 android:id="@+id/radioButtonG9s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="With friends" />
 
             <RadioButton
                 android:id="@+id/radioButtonG9s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="With a significant other" />
 
             <RadioButton
                 android:id="@+id/radioButtonG9s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 4" />
+                android:text="By yourself" />
         </RadioGroup>
 
         <TextView
@@ -371,7 +370,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #9: Random Question?"
+            android:text="Question #9: Which is most important when traveling?"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup9" />
@@ -389,25 +388,25 @@
                 android:id="@+id/radioButtonG10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="Quality and comfort" />
 
             <RadioButton
                 android:id="@+id/radioButtonG10s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Security" />
 
             <RadioButton
                 android:id="@+id/radioButtonG10s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="Lots of activities to do" />
 
             <RadioButton
                 android:id="@+id/radioButtonG10s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 4" />
+                android:text="Competitive prices" />
         </RadioGroup>
 
         <TextView
@@ -415,7 +414,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #10: Random Question?"
+            android:text="Question #10: Would you like to have native speakers?"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup10" />
@@ -433,27 +432,37 @@
                 android:id="@+id/radioButtonG11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 1" />
+                android:text="People speaking the same language as me" />
 
             <RadioButton
                 android:id="@+id/radioButtonG11s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 2" />
+                android:text="Most people are speaking the same language as me" />
 
             <RadioButton
                 android:id="@+id/radioButtonG11s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 3" />
+                android:text="I want to adapt to a new language" />
 
             <RadioButton
                 android:id="@+id/radioButtonG11s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Answer 4" />
+                android:text="I want to learn a whole new language" />
         </RadioGroup>
 
+        <Button
+            android:onClick="submitSurvey"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup11"
+                                             />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
