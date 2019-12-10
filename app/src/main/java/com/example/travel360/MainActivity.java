@@ -67,19 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,Survey.class));
             }
         });
-        final Button submitSurvey=(Button) findViewById(R.id.button);
-        submitSurvey.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               openActivity2();
-            }
-        });
 
-        public void openActivity2(); {
-            Intent intent = new Intent(this, Activity2.class);
-            startActivity(intent);
-        }
-        ;
 
 
     }
