@@ -35,6 +35,10 @@ public class Survey extends AppCompatActivity {
         Log.d("text", text1.getText().toString());
         ArrayList<RadioGroup> listOfRadioGroups = new ArrayList<RadioGroup>();
         listOfRadioGroups.add((RadioGroup)findViewById(R.id.radioGroup1));
+        RadioGroup test = findViewById(R.id.radioGroup1);
+        int radioButtonID1 = test.getCheckedRadioButtonId();
+        RadioButton answer = (RadioButton)test.findViewById(radioButtonID1);
+        Log.d("temp", answer.getTag().toString());
         listOfRadioGroups.add((RadioGroup)findViewById(R.id.radioGroup2));
         listOfRadioGroups.add((RadioGroup)findViewById(R.id.radioGroup5));
         listOfRadioGroups.add((RadioGroup)findViewById(R.id.radioGroup4));
@@ -49,6 +53,8 @@ public class Survey extends AppCompatActivity {
             RadioButton radioButton = (RadioButton)group.findViewById(radioButtonID);
             answers.add(radioButton.getText().toString());
             Log.d("radio", radioButton.getText().toString());
+            Log.d("tag", radioButton.getTag().toString());
+
 
 
             //group1.text

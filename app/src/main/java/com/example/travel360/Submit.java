@@ -25,5 +25,6 @@ public class Submit extends AppCompatActivity {
         for (String answer: answers) {
             Log.d("answers", answer);
 
+
     }
 }}

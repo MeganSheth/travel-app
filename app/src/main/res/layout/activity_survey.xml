@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView"
@@ -32,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="184dp"
-            android:text="Question #2: What type of weather do you like?"
+            android:text="Question #2: What type of climate do you like?"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
@@ -72,25 +73,29 @@
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Below 30 degrees (Cold)" />
+                android:text="Below 30 degrees (Cold)"
+                android:tag="Cold" />
 
             <RadioButton
                 android:id="@+id/radioButton1s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="30-50 degrees (Cold but a little warm)" />
+                android:text="30-50 degrees (Cold but a little warm)"
+                android:tag="Cold but a little warm"/>
 
             <RadioButton
                 android:id="@+id/radioButton1s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="50-70 degrees (Average)" />
+                android:text="50-70 degrees (Average)"
+                android:tag="Average"/>
 
             <RadioButton
                 android:id="@+id/radioButton1s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Above 70 degrees (Warm weather)" />
+                android:text="Above 70 degrees (Warm weather)"
+                android:tag="Warm weather" />
         </RadioGroup>
 
         <RadioGroup
@@ -106,19 +111,22 @@
                 android:id="@+id/radioButtonG2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Big concern $" />
+                android:text="Big concern $"
+                android:tag="$"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG2s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Not as much of a concern $$" />
+                android:text="Not as much of a concern $$"
+                android:tag="$$"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG2s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Not a concern $$$" />
+                android:text="Not a concern $$$"
+                android:tag="$$$"/>
         </RadioGroup>
 
 
@@ -136,24 +144,28 @@
                 android:id="@+id/radioButtonG4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Looking for an adventure" />
+                android:text="Looking for an adventure"
+                android:tag="Unsafe"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG4s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Looking for some adventure" />
+                android:text="Looking for some adventure"
+                android:tag="Safe"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG4s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mostly safe" />
+                android:text="Mostly safe"
+                android:tag="Safer"/>
             <RadioButton
                 android:id="@+id/radioButtonG4s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Safest possible" />
+                android:text="Safest possible"
+                android:tag="Safest"/>
         </RadioGroup>
 
         <RadioGroup
@@ -169,25 +181,29 @@
                 android:id="@+id/radioButtonG5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Close to home" />
+                android:text="Close to home"
+                android:tag="Homely"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG5s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="In-state" />
+                android:text="In-state"
+                android:tag="In-State"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG5s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Across the country" />
+                android:text="Across the country"
+                android:tag="Cross-Country"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG5s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="International travel" />
+                android:text="International travel"
+                android:tag="International"/>
         </RadioGroup>
 
         <TextView
@@ -213,25 +229,29 @@
                 android:id="@+id/radioButtonG6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lots of people" />
+                android:text="Lots of people"
+                android:tag="1"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG6s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Not too crowded" />
+                android:text="Not too crowded"
+                android:tag="2"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG6s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Few people" />
+                android:text="Few people"
+                android:tag="3"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG6s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Remote and private" />
+                android:text="Remote and private"
+                android:tag="4"/>
         </RadioGroup>
 
         <TextView
@@ -257,25 +277,29 @@
                 android:id="@+id/radioButtonG7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lots of history" />
+                android:text="Lots of history"
+                android:tag="1"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG7s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Moderate amount of history" />
+                android:text="Moderate amount of history"
+                android:tag="2"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG7s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Small amount of history" />
+                android:text="Small amount of history"
+                android:tag="3"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG7s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Basic and Simple" />
+                android:text="Basic and Simple"
+                android:tag="4"/>
         </RadioGroup>
 
         <TextView
@@ -300,25 +324,29 @@
                 android:id="@+id/radioButtonG8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Exotic delicacies" />
+                android:text="Exotic delicacies"
+                android:tag="1"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG8s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Different but traces of simplistic cuisines" />
+                android:text="Different but traces of simplistic cuisines"
+                android:tag="2"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG8s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Basic but traces of exotic cuisine" />
+                android:text="Basic but traces of exotic cuisine"
+                android:tag="3"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG8s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Basic and simple food" />
+                android:text="Basic and simple food"
+                android:tag="4"/>
         </RadioGroup>
 
         <TextView
@@ -344,25 +372,29 @@
                 android:id="@+id/radioButtonG9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="With family" />
+                android:text="With family"
+                android:tag="W/family"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG9s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="With friends" />
+                android:text="With friends"
+                android:tag="W/friends"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG9s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="With a significant other" />
+                android:text="With a significant other"
+                android:tag="W/companion"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG9s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="By yourself" />
+                android:text="By yourself"
+                android:tag="Yourself"/>
         </RadioGroup>
 
         <TextView
@@ -370,7 +402,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #9: Which is most important when traveling?"
+            android:text="Question #9: What kind of activity level would you like your vacation to have?"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup9" />
@@ -388,25 +420,29 @@
                 android:id="@+id/radioButtonG10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Quality and comfort" />
+                android:text="Not very active"
+                android:tag="1"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG10s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Security" />
+                android:text="Kind of active"
+                android:tag="2"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG10s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lots of activities to do" />
+                android:text="Pretty active"
+                android:tag="3"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG10s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Competitive prices" />
+                android:text="Really active"
+                android:tag="4"/>
         </RadioGroup>
 
         <TextView
@@ -432,25 +468,29 @@
                 android:id="@+id/radioButtonG11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="People speaking the same language as me" />
+                android:text="People speaking the same language as me"
+                android:tag="4"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG11s2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Most people are speaking the same language as me" />
+                android:text="Most people are speaking the same language as me"
+                android:tag="3"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG11s3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I want to adapt to a new language" />
+                android:text="I want to adapt to a new language"
+                android:tag="2"/>
 
             <RadioButton
                 android:id="@+id/radioButtonG11s4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I want to learn a whole new language" />
+                android:text="I want to learn a whole new language"
+                android:tag="1"/>
         </RadioGroup>
 
         <Button
