@@ -62,7 +62,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup1"
-            android:tag="degrees"
+            android:tag="Temperature"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -101,7 +101,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup2"
-            android:tag="money"
+            android:tag="Money"
             android:layout_width="289dp"
             android:layout_height="90dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -135,7 +135,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup4"
-            android:tag="adventure"
+            android:tag="Safety"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -173,7 +173,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup5"
-            android:tag="discovery"
+            android:tag="Discovery"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -222,7 +222,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup6"
-            android:tag="people"
+            android:tag="People"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -271,7 +271,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup7"
-            android:tag="history"
+            android:tag="History"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -319,7 +319,7 @@
             app:layout_constraintTop_toBottomOf="@+id/radioGroup7" />
         <RadioGroup
             android:id="@+id/radioGroup8"
-            android:tag="exotic"
+            android:tag="Exotic"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -368,7 +368,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup9"
-            android:tag="family"
+            android:tag="Family"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -417,7 +417,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup10"
-            android:tag="active"
+            android:tag="Activity"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -466,7 +466,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup11"
-            android:tag="language"
+            android:tag="Language"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
