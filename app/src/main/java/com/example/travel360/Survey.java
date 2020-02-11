@@ -135,11 +135,13 @@ public class Survey extends AppCompatActivity {
         for (Map.Entry<String, Integer> entry : output.entrySet()) {
             if (entry.getValue() > max) {
                 max = entry.getValue();
-
             }
-            Log.d("int", String.valueOf(max));
-            Log.d("string", String.valueOf(output));
         }
+
+        
+
+        Log.d("int", String.valueOf(max));
+        Log.d("string", String.valueOf(output));
 
         //Intent intent = new Intent(Survey.this, Submit.class);
         //intent.putStringArrayListExtra("questions", answers);
