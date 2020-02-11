@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="22dp"
-            android:text="Question #4: How far are you wanting to travel?"
+            android:text="Question #4: What are your travel motivations?"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
@@ -62,6 +62,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup1"
+            android:tag="degrees"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -70,36 +71,37 @@
 
 
             <RadioButton
-                android:id="@+id/radioButton1"
+                android:id="@+id/Degrees"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Below 30 degrees (Cold)"
-                android:tag="Cold" />
+                android:tag="1" />
 
             <RadioButton
-                android:id="@+id/radioButton1s2"
+                android:id="@+id/Degrees2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="30-50 degrees (Cold but a little warm)"
-                android:tag="Cold but a little warm"/>
+                android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButton1s3"
+                android:id="@+id/Degrees3.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="50-70 degrees (Average)"
-                android:tag="Average"/>
+                android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButton1s4"
+                android:id="@+id/Degrees4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Above 70 degrees (Warm weather)"
-                android:tag="Warm weather" />
+                android:tag="4" />
         </RadioGroup>
 
         <RadioGroup
             android:id="@+id/radioGroup2"
+            android:tag="money"
             android:layout_width="289dp"
             android:layout_height="90dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -108,31 +110,32 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG2"
+                android:id="@+id/button0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Big concern $"
-                android:tag="$"/>
+                android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG2s2"
+                android:id="@+id/button1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Not as much of a concern $$"
-                android:tag="$$"/>
+                android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG2s3"
+                android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Not a concern $$$"
-                android:tag="$$$"/>
+                android:tag="3"/>
         </RadioGroup>
 
 
 
         <RadioGroup
             android:id="@+id/radioGroup4"
+            android:tag="adventure"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -141,35 +144,36 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG4"
+                android:id="@+id/Adventure"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Looking for an adventure"
-                android:tag="Unsafe"/>
+                android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG4s2"
+                android:id="@+id/Adventure2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Looking for some adventure"
-                android:tag="Safe"/>
+                android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG4s3"
+                android:id="@+id/Adventure3.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Mostly safe"
-                android:tag="Safer"/>
+                android:tag="3"/>
             <RadioButton
-                android:id="@+id/radioButtonG4s4"
+                android:id="@+id/Adventure4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Safest possible"
-                android:tag="Safest"/>
+                android:tag="4"/>
         </RadioGroup>
 
         <RadioGroup
             android:id="@+id/radioGroup5"
+            android:tag="discovery"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -178,32 +182,32 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG5"
+                android:id="@+id/Discover"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Close to home"
-                android:tag="Homely"/>
+                android:text="To discover new horizons"
+                android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG5s2"
+                android:id="@+id/New"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="In-state"
-                android:tag="In-State"/>
+                android:text="To meet new people"
+                android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG5s3"
+                android:id="@+id/Learn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Across the country"
-                android:tag="Cross-Country"/>
+                android:text="To learn new things"
+                android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG5s4"
+                android:id="@+id/Venture"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="International travel"
-                android:tag="International"/>
+                android:text="To go on an adventure"
+                android:tag="4"/>
         </RadioGroup>
 
         <TextView
@@ -218,6 +222,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup6"
+            android:tag="people"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -226,28 +231,28 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG6"
+                android:id="@+id/People"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Lots of people"
                 android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG6s2"
+                android:id="@+id/People2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Not too crowded"
                 android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG6s3"
+                android:id="@+id/People3.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Few people"
                 android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG6s4"
+                android:id="@+id/People4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Remote and private"
@@ -266,6 +271,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup7"
+            android:tag="history"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -274,28 +280,28 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG7"
+                android:id="@+id/History"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Lots of history"
                 android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG7s2"
+                android:id="@+id/History2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Moderate amount of history"
                 android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG7s3"
+                android:id="@+id/History3.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Small amount of history"
                 android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG7s4"
+                android:id="@+id/History4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Basic and Simple"
@@ -313,6 +319,7 @@
             app:layout_constraintTop_toBottomOf="@+id/radioGroup7" />
         <RadioGroup
             android:id="@+id/radioGroup8"
+            android:tag="exotic"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -321,28 +328,28 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG8"
+                android:id="@+id/Exotic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Exotic delicacies"
                 android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG8s2"
+                android:id="@+id/Exotic2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Different but traces of simplistic cuisines"
                 android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG8s3"
+                android:id="@+id/Exotic3.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Basic but traces of exotic cuisine"
                 android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG8s4"
+                android:id="@+id/Exotic4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Basic and simple food"
@@ -361,6 +368,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup9"
+            android:tag="family"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -369,32 +377,32 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG9"
+                android:id="@+id/Family"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="With family"
-                android:tag="W/family"/>
+                android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG9s2"
+                android:id="@+id/Friends"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="With friends"
-                android:tag="W/friends"/>
+                android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG9s3"
+                android:id="@+id/Companion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="With a significant other"
-                android:tag="W/companion"/>
+                android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG9s4"
+                android:id="@+id/Yourself"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="By yourself"
-                android:tag="Yourself"/>
+                android:text="Yourself"
+                android:tag="4"/>
         </RadioGroup>
 
         <TextView
@@ -409,6 +417,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup10"
+            android:tag="active"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -417,28 +426,28 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG10"
+                android:id="@+id/Active"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Not very active"
                 android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG10s2"
+                android:id="@+id/Active2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Kind of active"
                 android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG10s3"
+                android:id="@+id/Active3.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Pretty active"
                 android:tag="3"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG10s4"
+                android:id="@+id/Active4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Really active"
@@ -457,6 +466,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup11"
+            android:tag="language"
             android:layout_width="299dp"
             android:layout_height="128dp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -465,32 +475,32 @@
 
 
             <RadioButton
-                android:id="@+id/radioButtonG11"
+                android:id="@+id/language"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="People speaking the same language as me"
-                android:tag="4"/>
+                android:tag="1"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG11s2"
+                android:id="@+id/language2.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Most people are speaking the same language as me"
-                android:tag="3"/>
-
-            <RadioButton
-                android:id="@+id/radioButtonG11s3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="I want to adapt to a new language"
                 android:tag="2"/>
 
             <RadioButton
-                android:id="@+id/radioButtonG11s4"
+                android:id="@+id/language3.0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I want to adapt to a new language"
+                android:tag="3"/>
+
+            <RadioButton
+                android:id="@+id/language4.0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="I want to learn a whole new language"
-                android:tag="1"/>
+                android:tag="4"/>
         </RadioGroup>
 
         <Button
@@ -503,6 +513,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup11"
                                              />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

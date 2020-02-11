@@ -11,11 +11,15 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Dictionary;
+import java.util.Hashtable;
 
 public class Survey extends AppCompatActivity {
 
-    private ArrayList<String> answers = new ArrayList<String>();
+    Dictionary<String, String> answers = new Hashtable<String, String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +27,24 @@ public class Survey extends AppCompatActivity {
         setContentView(R.layout.activity_survey);
         Button submitSurvey=(Button) findViewById(R.id.submitButton);
 
+    }
 
-
-
+    public String loadJSONFromAsset() {
+        String json = null;
+        try {
+            InputStream is = getAssets().open("assets/locations.json");
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+            Log.d("radio", "it worked=================");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            Log.d("radio", "oops=================");
+            return null;
+        }
+        return json;
     }
 
     public void submitSurvey(View view) {
@@ -49,19 +68,24 @@ public class Survey extends AppCompatActivity {
         listOfRadioGroups.add((RadioGroup)findViewById(R.id.radioGroup10));
         listOfRadioGroups.add((RadioGroup)findViewById(R.id.radioGroup11));
         for (RadioGroup group : listOfRadioGroups) {
+            String question = group.getTag().toString();
             int radioButtonID = group.getCheckedRadioButtonId();
-            RadioButton radioButton = (RadioButton)group.findViewById(radioButtonID);
-            answers.add(radioButton.getText().toString());
-            Log.d("radio", radioButton.getText().toString());
-            Log.d("tag", radioButton.getTag().toString());
-
+            RadioButton radioButton = (RadioButton) group.findViewById(radioButtonID);
+            String response = radioButton.getTag().toString();
+            answers.put(question, response);
+            //answers.add(radioButton.getText().toString());
 
 
             //group1.text
+
         }
+        Log.d("radio", loadJSONFromAsset());
+
         Intent intent = new Intent(Survey.this, Submit.class);
-        intent.putStringArrayListExtra("questions", answers );
+        //intent.putStringArrayListExtra("questions", answers);
         startActivity(intent);
+
+
 
     }
 
