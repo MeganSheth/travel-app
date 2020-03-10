@@ -100,20 +100,24 @@ public class Survey extends AppCompatActivity {
         Map <String, Integer> output = new HashMap<String, Integer>();
         if (jsonArray != null){
             Log.d("string", "Array isn't empty");
+            //Log.d("string", "** jsonArray **");
+            //Log.d("atring", String.valueOf(jsonArray));
+            // Iterates through survey answers and compares to JSON data
             for (int i = 0; i < jsonArray.length(); i++) {
                 try {
                     JSONObject explrObject = jsonArray.getJSONObject(i);
-                    String location = explrObject.getString("location");
-                    Log.d("string", location);
-                    JSONObject characteristics = explrObject.getJSONObject("characteristics");
-                    Iterator<String> iter = characteristics.keys();
+                    String location = explrObject.getString("location"); // gets the location
+                    JSONObject characteristics = explrObject.getJSONObject("characteristics"); // gets the characteristics
+                    Iterator<String> iter = characteristics.keys(); // gets individual characteristics
+
+                    // Iterates through each characteristic and compares with the survey answers
                     int count = 0;
                     while (iter.hasNext()) {
-                        String key = iter.next();
+                        String key = iter.next(); // gets the string for the characteristic
                         try {
                             int characteristicValue = (int) characteristics.get(key);
-                            String answerString = answers.get(key);
-                            int answerValue = Integer.valueOf(answerString);
+                            String answerValueStr = answers.get(key);
+                            int answerValue = Integer.valueOf(answerValueStr);
                             if (characteristicValue == answerValue) {
                                 count++;
                             }
@@ -121,9 +125,10 @@ public class Survey extends AppCompatActivity {
                             Log.d("string", "oof");
                         }
                     }
-                    output.put(location, count);
+                    output.put(location, count); // puts the data into a new hashmap
                     // Array(location : count) to hashtable
-                    Log.d("integar", "value: " + count);
+                    Log.d("string", String.valueOf(location));
+                    Log.d("integer", "value: " + count);
                 } catch (JSONException e) {
                     throw new RuntimeException(e);
                 }
@@ -131,21 +136,38 @@ public class Survey extends AppCompatActivity {
             }
         }
 
+        //System.out.println(output);
+        //System.out.println(output.get("Rome, Italy"));
+
         int max =  0;
-        for (Map.Entry<String, Integer> entry : output.entrySet()) {
-            if (entry.getValue() > max) {
-                max = entry.getValue();
+        String maxlocation = "";
+        HashMap <Integer, String> finallocation = new HashMap<Integer, String>();
+        int Maxcount = 0;
+        while (Maxcount != 3) {
+            max = 0;
+            maxlocation = "";
+            for (Map.Entry<String, Integer> entry : output.entrySet()) {
+                if (entry.getValue() > max) {
+                    max = entry.getValue();
+                    maxlocation = entry.getKey();
+                }
             }
+            int val = output.remove(maxlocation);
+            finallocation.put(Maxcount, maxlocation);
+            Maxcount++;
         }
 
-        
 
-        Log.d("int", String.valueOf(max));
-        Log.d("string", String.valueOf(output));
 
-        //Intent intent = new Intent(Survey.this, Submit.class);
-        //intent.putStringArrayListExtra("questions", answers);
-        //startActivity(intent);
+        //Log.d("int", String.valueOf(max));
+        //Log.d("string", String.valueOf(output));
+        //Log.d("string", String.valueOf(maxlocation));
+        Log.d("string", "final location");
+        System.out.println(finallocation);
+
+        Intent intent = new Intent(this, FinalScreen.class);
+        intent.putExtra("map", finallocation);
+        startActivity(intent);
 
     }
 
