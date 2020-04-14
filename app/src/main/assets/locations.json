@@ -13,23 +13,26 @@
         "Family" : 2,
         "Activity" : 2,
         "Language" : 4
-      }
+      },
+      "description" : "Warm weather, reasonable pricing, very safe, discover new horizons, lots of people, moderate amount of history, exotic delicacies, travel with friends, fairly active, and most people speak the same language."
     },
     {
       "location" : "Rome, Italy",
       "characteristics" : {
         "Temperature" : 3,
-        "Money" : 3,
+        "Money" : 2,
         "Safety" : 3,
         "Discovery" : 3,
         "People" : 1,
         "History" : 1,
-        "Exotic" : 4,
+        "Exotic" : 1,
         "Family" : 1,
         "Activity" : 2,
         "Language" : 2
-      }
+      },
+      "description" : "Moderate temperature, reasonable pricing, mostly safe, learn new things, very crowded, lots of history, exotic delicacies, travel with family, fairly active, and an opportunity to learn a new language."
     },
+
     {
       "location" : "Paris, France",
       "characteristics" : {
@@ -43,7 +46,8 @@
         "Family" : 1,
         "Activity" : 2,
         "Language" : 3
-      }
+      },
+      "description" : "Moderate temperature, reasonable pricing, mostly safe, discover new horizons, very crowded, lots of history, exotic delicacies, travel with family, fairly active, and an opportunity to learn a new language."
     },
     {
       "location" : "Moscow, Russia",
@@ -58,7 +62,8 @@
         "Family" : 4,
         "Activity" : 2,
         "Language" : 3
-      }
+      },
+      "description" : "Cold climate, reasonable pricing, mostly safe, learn new things, very crowded, lots of history, exotic delicacies, travel by yourself, fairly active, and an opportunity to learn a new language."
     },
     {
       "location" : "Toronto, Canada",
@@ -73,7 +78,8 @@
         "Family" : 2,
         "Activity" : 4,
         "Language" : 2
-      }
+      },
+      "description" : "Cold climate, very reasonable pricing, very safe, meet enw people, not too crowded, small amount of history, basic but traces of exotic cuisine, travel with friends, really active, and most people speak the same language."
     },
     {
       "location" : "Cancun, Mexico",
@@ -88,7 +94,8 @@
         "Family" : 3,
         "Activity" : 1,
         "Language" : 2
-      }
+      },
+      "description" : "Warm weather, very reasonable pricing, mostly safe, adventurous, very crowded, not much history, tropical delicacies, travel with a significant other, not very active, and most people are speaking the same language."
     },
     {
       "location" : "Reykjavik, Iceland",
@@ -103,7 +110,8 @@
         "Family" : 1,
         "Activity" : 4,
         "Language" : 1
-      }
+      },
+      "description" : "Cold climate, reasonable pricing, very safe, discover new horizons, remote and private, moderate amount of history, exotic delicacies, travel with family, really active, and more people speak the same language."
     },
     {
       "location" : "New Orleans, Louisiana",
@@ -112,28 +120,30 @@
         "Money" : 2,
         "Safety" : 4,
         "Discovery" : 2,
-        "People" : 3,
+        "People" : 2,
         "History" : 3,
-        "Exotic" : 3,
+        "Exotic" : 1
         "Family" : 1,
         "Activity" : 2,
         "Language" : 1
-      }
+      },
+      "description" : "Moderate climate, reasonable pricing, very safe, meet new people, not as much crowded, small amount of history, exotic delicacies, travel with family, kind of active, and more people speak the same language."
     },
     {
       "location" : "London, England",
       "characteristics" : {
         "Temperature" : 3,
-        "Money" : 3,
+        "Money" : 1,
         "Safety" : 2,
         "Discovery" : 1,
         "People" : 2,
         "History" : 1,
-        "Exotic" : 3,
+        "Exotic" : 2,
         "Family" : 1,
         "Activity" : 3,
         "Language" : 1
-      }
+      },
+      "description" : "Moderate climate, high pricing, adventurous, discover new horizons, not too crowded, lots of history, different but traces of simplistic cuisines, travel with family, pretty active, and more people speak the same language."
     },
     {
       "location" : "Orlando, Florida",
@@ -148,7 +158,8 @@
         "Family" : 1,
         "Activity" : 3,
         "Language" : 1
-      }
+      },
+      "description" : "Warm climate, very reasonable pricing, very safe, adventurous, very crowded, small amount of history, simplistic cuisines, travel with family, pretty active, and more people speak the same language."
     },
     {
       "location" : "San Francisco, California",
@@ -161,9 +172,10 @@
         "History" : 3,
         "Exotic" : 3,
         "Family" : 1,
-        "Activity" : 4,
+        "Activity" : 2,
         "Language" : 1
-      }
+      },
+      "description" : "Moderate climate, very reasonable pricing, very safe, discover new horizons, very crowded, small amount of history, simplistic cuisines, travel with friends, and more people speak the same language."
     }
   ]
 
