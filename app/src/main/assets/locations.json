@@ -79,7 +79,7 @@
         "Activity" : 4,
         "Language" : 2
       },
-      "description" : "Cold climate, very reasonable pricing, very safe, meet enw people, not too crowded, small amount of history, basic but traces of exotic cuisine, travel with friends, really active, and most people speak the same language."
+      "description" : "Cold climate, very reasonable pricing, very safe, meet new people, not too crowded, small amount of history, basic but traces of exotic cuisine, travel with friends, really active, and most people speak the same language."
     },
     {
       "location" : "Cancun, Mexico",
@@ -122,7 +122,7 @@
         "Discovery" : 2,
         "People" : 2,
         "History" : 3,
-        "Exotic" : 1
+        "Exotic" : 1,
         "Family" : 1,
         "Activity" : 2,
         "Language" : 1
